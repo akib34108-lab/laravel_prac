@@ -1,0 +1,28 @@
+To download laravel:
+composer create-project --prefer-dist laravel/laravel my-app "12.*"
+
+To create database:
+php artisan migrate
+
+To run project:
+php artisan serve
+
+To delete table from database (highest migrate batch delete):
+php artisan migrate:rollback
+
+To make model for product (m for migration, r for controller):
+php artisan model: make product -m -r
+
+To show all route list:
+php artisan route:list
+
+To add deleted_at to existing table:
+php artisan make:migration add_deleted_at_to_students_table --table=students
+
+To run other program download from github:
+	1. composer install (gitbash)
+	2. cp .env.example .env
+	3. php artisan key:generate
+	4. go to .env file and add a database name in there
+	5. php artisan migrate
+	5. php artisan serve
