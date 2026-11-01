@@ -11,7 +11,7 @@ To delete table from database (highest migrate batch delete):
 php artisan migrate:rollback
 
 To make model for product (m for migration, r for controller):
-php artisan model: make product -m -r
+php artisan model:make product -m -r
 
 To show all route list:
 php artisan route:list
